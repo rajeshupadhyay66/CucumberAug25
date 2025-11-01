@@ -27,6 +27,7 @@ public class loginsteps extends baseSteps {
             initConfig();
         }
         TCName = scenario.getName();
+        System.out.println(TCName);
         logger = extent.createTest(TCName);
     }
 
