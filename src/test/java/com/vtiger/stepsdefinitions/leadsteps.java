@@ -19,7 +19,7 @@ public class leadsteps extends baseSteps {
        List<Map<String,String>> dt = dataTable.asMaps(String.class, String.class);
        for(int i=0;i<dt.size();i++)
        {
-
+           System.out.println("Leads");
            homePage.clickOnNewLead();
            leadPage.createlead(dt.get(i).get("lastname"), dt.get(i).get("company"));
 
